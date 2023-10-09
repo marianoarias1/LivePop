@@ -1,0 +1,32 @@
+.main-list-items{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.items-container h2{
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 20px;
+}
+
+.image-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container iframe{
+    width:600px;
+    margin: 20px;
+}
