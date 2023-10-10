@@ -1,7 +1,6 @@
 import './App.css';
 import {NavBar} from './components/navBar/NavBar';
-import { ListItem } from './components/listItem/listItem';
-
+import { ListItem } from './components/listItem/ListItem.jsx';
 function App() {
   const props={
     message:'OOPS LLEGASTE TEMPRANO, AÚN ESTAMOS TRABAJANDO.',

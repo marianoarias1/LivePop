@@ -15,4 +15,3 @@ export const ListItem = ({message, greeting, gif}) => {
     </main>
   )
 }
-
