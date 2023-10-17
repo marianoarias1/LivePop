@@ -1,6 +1,7 @@
 import './App.css';
 import {NavBar} from './components/navBar/NavBar';
-import { ListItem } from './components/listItem/ListItem.jsx';
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer.jsx';
+
 function App() {
   const props={
     message:'OOPS LLEGASTE TEMPRANO, AÚN ESTAMOS TRABAJANDO.',
@@ -11,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <ListItem {...props}/>
+      <ItemListContainer {...props}/>
     </div>
   );
 }
