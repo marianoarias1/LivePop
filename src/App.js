@@ -4,7 +4,7 @@ import { ItemListContainer } from './components/ItemListContainer/ItemListContai
 import { ItemDetailContainer } from './components/itemDetailContainer/ItemDetailContainer';
 import { useProduct } from './Context/productContext';
 import { Route, Routes } from 'react-router-dom';
-import { CdCategory } from './cdCategory/CdCategory';
+import { CdCategory } from './components/cdCategory/CdCategory';
 import { Error } from './Error/Error';
 import { CartPage } from './components/CartPage/CartPage';
 

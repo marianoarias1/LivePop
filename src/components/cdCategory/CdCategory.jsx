@@ -1,9 +1,9 @@
 import React from 'react'
-import '../components/item/itemStyles.css'
-import '../components/ItemListContainer/itemListContainerStyles.css'
-import { products } from '../JSON/products'
+import '../item/itemStyles.css'
+import '../ItemListContainer/itemListContainerStyles.css'
+import { products } from '../../JSON/products'
 import { useParams } from 'react-router-dom'
-import { Item } from '../components/item/Item';
+import { Item } from '../item/Item';
 
 export const CdCategory = () => {
     const {categoryType} = useParams();
