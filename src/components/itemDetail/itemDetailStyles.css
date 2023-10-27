@@ -1,0 +1,165 @@
+.item-detail-card-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.close-detail-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.close-detail-container .close-detail{
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-top: 15px;
+    color:rgb(228, 161, 173);
+    transition: all .2s ease-in-out;
+}
+
+.close-detail-container .close-detail:active{
+    color: rgb(251, 198, 207);
+    transform: scale(.9);
+}
+
+.item-detail-data-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item-detail-img-container{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.item-detail-img-container img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.item-detail-data{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title-detail-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-detail-data .title-detail-container h2{
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.item-detail-data h2{
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 10px 0px 10px 0px; 
+}
+
+.item-detail-data span{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 10px 0px 10px 0px; 
+}
+
+.item-detail-data button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 20px 0px;
+    background-color: rgb(228, 161, 173);
+    color: rgb(250, 248, 248);
+    font-size: .75rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.item-detail-data button:hover{
+    background-color: rgb(251, 198, 207);
+}
+
+.item-detail-data button:active{
+    transform: scale(.98);
+}
+
+.btn-detail-container{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.btn-detail-container button{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 161, 173);
+    border: none;
+    font-size: 1.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    color: rgb(250, 248, 248);
+    transition: all .3s ease-in-out;
+}
+
+.btn-detail-container button:hover{
+    background-color: rgb(251, 198, 207);
+}
+
+.btn-detail-container button:active{
+    transform: scale(.98);
+}
+
+.btn-detail-container span{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.songs-detail-container{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.songs-detail-container ol{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.songs-detail-container ol li{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: capitalize;
+}
