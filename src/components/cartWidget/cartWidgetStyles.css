@@ -18,6 +18,11 @@
     align-items: center;
 }
 
+.link-route{
+    text-decoration: none;
+    color:rgb(250, 248, 248) ;
+}
+
 .counter-container span{
     width: 15px;
     height: 15px;
