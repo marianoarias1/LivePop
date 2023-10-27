@@ -3,10 +3,10 @@ import {NavBar} from './components/navBar/NavBar';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer.jsx';
 import { ItemDetailContainer } from './components/itemDetailContainer/ItemDetailContainer';
 import { useProduct } from './Context/productContext';
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { CdCategory } from './cdCategory/CdCategory';
 import { Error } from './Error/Error';
-import { CartPage } from './CartPage/CartPage';
+import { CartPage } from './components/CartPage/CartPage';
 
 function App() {
   const {showDetail}= useProduct()
