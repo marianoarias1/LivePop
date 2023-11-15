@@ -8,7 +8,7 @@ export const Error = () => {
         <div className='card-error-container'>
             <h2>OOPS AL PARECER OCURRIÓ UN ERROR</h2>
             <span>Deseas volver a la página principal?</span>
-            <Link exact to='/'><button>VOLVER</button></Link>
+            <Link to='/'><button>VOLVER</button></Link>
         </div>
 
     </div>

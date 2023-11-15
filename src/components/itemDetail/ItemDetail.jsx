@@ -1,9 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./itemDetailStyles.css"
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import Toastify from 'toastify-js'
+import "toastify-js/src/toastify.css"
+import { useCartContext } from '../../hooks/useCartContext';
+import { outOfStock } from '../../Context/cartContext';
 
 export const ItemDetail = ({product, onClose}) => {
+    const {addToCart} = useCartContext();
+    const [count, setCount] = useState(1);
+
+    const addNewProduct=()=>{
+        if(!product.stock || count > product.stock){
+            outOfStock()
+        }
+        else{
+            addToCart(product, count)
+        }
+
+    }
+
+    const handleCountIncrement=()=>{
+        if(count < product.stock){
+            setCount(count + 1);
+        }
+        else{
+            outOfStock();
+        }
+    }
+
+    const handleCountDecrement=()=>{
+        if(count > 1){
+            setCount(count - 1)
+        }
+    }
+
     if(!product || product.length === 0){
         return null
     }
@@ -30,12 +62,12 @@ export const ItemDetail = ({product, onClose}) => {
         
                         <h2>{product.artist}</h2>
                         <span>${product.price}</span>
-                        <button>AGREGAR AL CARRITO</button>
+                        <button onClick={addNewProduct}>AGREGAR AL CARRITO</button>
         
                         <div className='btn-detail-container'>
-                            <button>+</button>
-                            <span>0</span>
-                            <button>-</button>
+                            <button onClick={handleCountIncrement}>+</button>
+                            <span>{count}</span>
+                            <button onClick={handleCountDecrement}>-</button>
                         </div>
     
                         <div className='songs-detail-container'>

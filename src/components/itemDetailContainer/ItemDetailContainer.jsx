@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./itemDetailContainerStyles.css"
 import { ItemDetail } from '../itemDetail/ItemDetail'
-import { useProduct } from '../../Context/productContext'
+import { useProductContext } from '../../hooks/useProductContext'
 
 
 export const ItemDetailContainer = () => {
-
-  const {showDetail , setShowDetail}= useProduct();
+  const {showDetail , setShowDetail}=useProductContext();
 
   function closeDetail(){
     setShowDetail(false)

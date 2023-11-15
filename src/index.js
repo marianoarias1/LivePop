@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ProductProvider } from './Context/productContext';
 import { BrowserRouter } from 'react-router-dom';
+import './Firebase/fireBaseConfig'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,6 +1,6 @@
-import React, {useState, useMemo} from "react";
+import {useState, useMemo, createContext, useContext} from "react";
 
-const ProductContext = React.createContext();
+export const ProductContext = createContext();
 
 export function ProductProvider(props){
     const [showDetail, setShowDetail] = useState([]);
@@ -13,12 +13,4 @@ export function ProductProvider(props){
     },[showDetail, setShowDetail])
 
     return <ProductContext.Provider value={value} {...props}/>
-}
-
-export function useProduct(){
-    const context = React.useContext(ProductContext)
-    if (!context){
-        throw new Error('Error de contexto')
-    }
-    return context;
 }

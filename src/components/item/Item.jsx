@@ -1,10 +1,10 @@
 import React from 'react'
 import './itemStyles.css'
-import { useProduct } from '../../Context/productContext'
 import { Link } from 'react-router-dom';
+import { useProductContext } from '../../hooks/useProductContext';
 
 export const Item = ({product}) => {
-    const {showDetail, setShowDetail} = useProduct();
+    const {setShowDetail} = useProductContext();
 
     function openDetail(){
         setShowDetail(product)
@@ -16,7 +16,7 @@ return (
               <img src={product.src} alt={product.name}/>
               
               <div className='btn-container'>
-                  <Link to={`/detail/${product.id + product.name}`}><button onClick={openDetail}>VER DETALLE</button></Link>
+                  <Link to={`/detail/${product.id}`}><button onClick={openDetail}>VER DETALLE</button></Link>
               </div>
           </div>
           <div className='product-items'>
