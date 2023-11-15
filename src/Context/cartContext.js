@@ -52,8 +52,9 @@ export function CartProvider({children}){
 
 
     const handleIncrement= (product)=>{
-        if(product.qty <= product.stock){
-            product.qty += 1
+        if(product.stock >= 1){
+            product.qty += 1 
+            stockDecrement(product, 1)
             setCart([...cart])
         }
         else{
@@ -65,6 +66,7 @@ export function CartProvider({children}){
     const handleDecrement = (product)=>{
         if(product.qty > 1){
             product.qty -= 1
+            stockIncrement(product, 1)
             setCart([...cart])
         }
         else{

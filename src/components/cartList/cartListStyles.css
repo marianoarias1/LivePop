@@ -61,3 +61,33 @@
 .delete-item:active{
     transform: scale(.9);
 }
+
+.qty-prod-container{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.data-item-container .qty-prod-container button{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 161, 173);
+    border: none;
+    font-size: 1.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    color: rgb(250, 248, 248);
+    transition: all .3s ease-in-out;
+}
+
+.data-item-container .qty-prod-container button:hover{
+    background-color: rgb(251, 198, 207);
+}
+
+.data-item-container .qty-prod-container button:active{
+    transform: scale(.98);
+}

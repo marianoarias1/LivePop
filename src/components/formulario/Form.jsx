@@ -4,7 +4,7 @@ import { createOrder } from '../../Firebase/fireBaseConfig'
 import './formStyles.css'
 import { CartResumeForm } from './CartResumeForm'
 import Swal from 'sweetalert2'
-import { Link, useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 export const Form = () => {
     const [user, setUser] = useState({});
