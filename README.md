@@ -1,4 +1,4 @@
-# Bienvenido a Live Pop
+# Bienvenido a Live Pop´ 💽
 
 Este proyecto es un fake E-commerce realizado para mi cursada en CODER HOUSE, espero lo disfrutes.
 
@@ -6,12 +6,12 @@ Este proyecto es un fake E-commerce realizado para mi cursada en CODER HOUSE, es
 ![Alt text](image.png)
 
 
-## Tecnologías utilizadas
+## Tecnologías utilizadas ✨
 
-### `React.JS` ### `Boostrap` ### `CSS` ### `Sweet Alert` ### `Toastify`
+### `React.JS` `Boostrap` `CSS` `Sweet Alert` `Toastify`
 
 
-## Acerca de Live Pop
+## Acerca de Live Pop 🕺💃
 
 Este proyecto es distinto a la mayoría de los que he realizado, intentando jugar con una paleta de colores distinta a la que estoy acostumbrado a usar.
 
@@ -20,13 +20,23 @@ Intento generar un diseño un poco mas llamativo al habitual y a su vez no gener
 Live Pop es una tienda virtual de música que busca combinar los CD's y el merchandising de dos artistas reconocidas, Dua Lipa y Ariana Grande
 Para variar un poco en los productos los CD's al momento de entrar en el detaller genera una lista de las canciones que trae dicho CD.
 
-Los productos se cargan en la base de datos de Firebase, donde también se generan las ordenes de los usuarios con su mail, su numero de telefono, su nombre y apellido y por supuesto los productos que selecionó.
+Los productos se cargan en la base de datos de Firebase, donde también se generan las ordenes de los usuarios con su mail, su numero de telefono, su nombre y apellido y por supuesto los productos que selecionó 🔥.
 
 
-Al momento del usuario llegar al checkout decidí incluir un resumen de los productos que selecionó.
+Al momento del usuario llegar al checkout decidí incluir un resumen de los productos que selecionó 📠.
 
 ![Alt text](image-1.png)
 
+Así es como aparecerían las ordenes en Firebase con los datos del usuario 📑.
+
+![Alt text](image-2.png)
+
+
+## Despedida!
+
+Si llegaste hasta acá espero que hayas disfrutado el proyecto y que si tenés alguna recomendación siempre son bienvenidas en mi email (psst 😉, desde el footer del proyecto podes obtener la dirección de mi mail 📫).
+
+https://media.giphy.com/media/kaBU6pgv0OsPHz2yxy/giphy.gif
 
 
 
