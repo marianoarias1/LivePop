@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Bienvenido a Live Pop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es un fake E-commerce realizado para mi cursada en CODER HOUSE, espero lo disfrutes.
 
-## Available Scripts
+## Para ir al Deploy del proyecto haga click [Aquí](https://live-pop.vercel.app/)
+![Alt text](image.png)
 
-In the project directory, you can run:
 
-### `npm start`
+## Tecnologías utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `React.JS` ### `Boostrap` ### `CSS` ### `Sweet Alert` ### `Toastify`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Acerca de Live Pop
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Este proyecto es distinto a la mayoría de los que he realizado, intentando jugar con una paleta de colores distinta a la que estoy acostumbrado a usar.
 
-### `npm run build`
+Intento generar un diseño un poco mas llamativo al habitual y a su vez no generar confusión sobre lo que ve el usuario, por eso los productos tienen un fondo de color celeste que hace resaltar los mismos del fondo y da un respiro a la vista del usuario de tantos tonos rosas.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Live Pop es una tienda virtual de música que busca combinar los CD's y el merchandising de dos artistas reconocidas, Dua Lipa y Ariana Grande
+Para variar un poco en los productos los CD's al momento de entrar en el detaller genera una lista de las canciones que trae dicho CD.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Los productos se cargan en la base de datos de Firebase, donde también se generan las ordenes de los usuarios con su mail, su numero de telefono, su nombre y apellido y por supuesto los productos que selecionó.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Al momento del usuario llegar al checkout decidí incluir un resumen de los productos que selecionó.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Alt text](image-1.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

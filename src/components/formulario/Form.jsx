@@ -11,7 +11,7 @@ export const Form = () => {
     const { cart, clearCart} = useCartContext();
     const navigate= useNavigate();
 
-    async function successfullyCheckout(order){
+    function successfullyCheckout(order){
         Swal.fire({
             title: "Orden creada con éxito",
             text: `Su numero de seguimiento es: ${order}`,
@@ -93,7 +93,7 @@ export const Form = () => {
                         cart.map((prod) => {
                             return (
                                 <>
-                                    <CartResumeForm key={prod.id} product={prod} />
+                                    <CartResumeForm key={prod.id + Math.random(36)} product={prod} />
                                 </>
                             )
                         })

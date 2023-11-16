@@ -47,10 +47,10 @@ export const Footer = () => {
     
     <div className='footer-container'>
         <div className='logo-footer-container'>
-            <a href="https://www.instagram.com/mariano_arias1/" target="_blank">
+            <a href="https://www.instagram.com/mariano_arias1/" target="_blank" rel='noreferrer'>
                 <BsInstagram className='icon-footer'/>
             </a>
-            <a href="https://www.linkedin.com/in/mariano-arias1/" target="_blank">
+            <a href="https://www.linkedin.com/in/mariano-arias1/" target="_blank" rel='noreferrer'>
                 <AiOutlineLinkedin className='icon-footer'/>
             </a>
             <FiMail className='icon-footer' onClick={copyClipboard}/>

@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import "./itemDetailStyles.css"
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-import Toastify from 'toastify-js'
-import "toastify-js/src/toastify.css"
 import { useCartContext } from '../../hooks/useCartContext';
 import { outOfStock } from '../../Context/cartContext';
 
