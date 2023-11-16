@@ -1,4 +1,4 @@
-# Bienvenido a Live Pop´ 💽
+# Bienvenido a Live Pop 💽
 
 Este proyecto es un fake E-commerce realizado para mi cursada en CODER HOUSE, espero lo disfrutes.
 
@@ -36,7 +36,7 @@ Así es como aparecerían las ordenes en Firebase con los datos del usuario 📑
 
 Si llegaste hasta acá espero que hayas disfrutado el proyecto y que si tenés alguna recomendación siempre son bienvenidas en mi email (psst 😉, desde el footer del proyecto podes obtener la dirección de mi mail 📫).
 
-https://media.giphy.com/media/kaBU6pgv0OsPHz2yxy/giphy.gif
+<iframe src="https://giphy.com/embed/kaBU6pgv0OsPHz2yxy" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/jake-gyllenhaal-bye-kaBU6pgv0OsPHz2yxy">via GIPHY</a></p>
 
 
 
