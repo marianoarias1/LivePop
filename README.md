@@ -35,3 +35,9 @@ Así es como aparecerían las ordenes en Firebase con los datos del usuario 📑
 ## Despedida!
 
 Si llegaste hasta acá espero que hayas disfrutado el proyecto y que si tenés alguna recomendación siempre son bienvenidas en mi email (psst 😉, desde el footer del proyecto podes obtener la dirección de mi mail 📫).
+<<<<<<< HEAD
+=======
+
+
+![giphy](https://github.com/marianoarias1/LivePop/assets/93659158/aec16477-4d04-46cd-8126-12b2a9cfc99d)
+>>>>>>> 4839bfd8f871457a247c6dc68bc2da0d65bb25c9
