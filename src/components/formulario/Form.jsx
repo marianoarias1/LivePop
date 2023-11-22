@@ -8,8 +8,20 @@ import {useNavigate} from 'react-router-dom'
 
 export const Form = () => {
     const [user, setUser] = useState({});
+    const [validEmail, setValidEmail]=useState(false)
+    const [validName, setValidName]=useState(false)
+    const [validTel, setValidTel]=useState(false)
     const { cart, clearCart} = useCartContext();
     const navigate= useNavigate();
+
+    function validateFields(){
+        Swal.fire({
+            title: "OOPS",
+            text: `Por favor, rellene todos los campos`,
+            icon: "warning",
+            confirmButtonText: `OK`
+          })
+    }
 
     function successfullyCheckout(order){
         Swal.fire({
@@ -40,9 +52,14 @@ export const Form = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault()
-        const buy = { cart, user }
-        const order = await createOrder(buy)
-        successfullyCheckout(order);
+        if(!validEmail || !validName || !validTel){
+            validateFields()
+        }
+        else{
+            const buy = { cart, user }
+            const order = await createOrder(buy)
+            successfullyCheckout(order);
+        }
     }
 
 
@@ -55,7 +72,10 @@ export const Form = () => {
                         type="email"
                         name='email'
                         placeholder="example@hotmail.com"
-                        onChange={handleInput}
+                        onChange={(e)=>{
+                            handleInput(e)
+                            setValidEmail(true)
+                        }}
                         value={user.email}
                     />
                 </div>
@@ -66,7 +86,10 @@ export const Form = () => {
                         type="text"
                         name='username'
                         placeholder="Some Example"
-                        onChange={handleInput}
+                        onChange={(e)=>{
+                            handleInput(e)
+                            setValidName(true)
+                        }}
                         value={user.username}
                     />
                 </div>
@@ -77,7 +100,10 @@ export const Form = () => {
                         type="text"
                         name='tel'
                         placeholder="11-4455-5544"
-                        onChange={handleInput}
+                        onChange={(e)=>{
+                            handleInput(e)
+                            setValidTel(true)
+                        }}
                         value={user.tel}
                     />
                 </div>
