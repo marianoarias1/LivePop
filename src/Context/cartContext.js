@@ -1,23 +1,8 @@
 import { createContext, useState } from "react";
-import Toastify from 'toastify-js'
-import "toastify-js/src/toastify.css"
+import { outOfStock } from "../Functions/popupFunctions";
 
 export const cartContext= createContext();
 
-export function outOfStock(){
-    Toastify({
-        text: "No hay suficiente stock",
-        duration: 1500,
-        newWindow: true,
-        close: false,
-        gravity: "top",
-        position: "right", 
-        stopOnFocus: false,
-        style: {
-          background: "rgb(187, 208, 227)",
-        }
-      }).showToast();
-}
 
 export function CartProvider({children}){
     const [cart, setCart] = useState([]);

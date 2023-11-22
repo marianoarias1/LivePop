@@ -3,25 +3,19 @@ import { useCartContext } from '../../hooks/useCartContext'
 import { createOrder } from '../../Firebase/fireBaseConfig'
 import './formStyles.css'
 import { CartResumeForm } from './CartResumeForm'
-import Swal from 'sweetalert2'
 import {useNavigate} from 'react-router-dom'
+import { successfullyCheckout, validateFields } from '../../Functions/popupFunctions'
+import Swal from 'sweetalert2'
 
 export const Form = () => {
     const [user, setUser] = useState({});
+
     const [validEmail, setValidEmail]=useState(false)
     const [validName, setValidName]=useState(false)
     const [validTel, setValidTel]=useState(false)
+
     const { cart, clearCart} = useCartContext();
     const navigate= useNavigate();
-
-    function validateFields(){
-        Swal.fire({
-            title: "OOPS",
-            text: `Por favor, rellene todos los campos`,
-            icon: "warning",
-            confirmButtonText: `OK`
-          })
-    }
 
     function successfullyCheckout(order){
         Swal.fire({
@@ -40,6 +34,7 @@ export const Form = () => {
             }
           })
     }
+
 
     const handleInput = ({ target }) => {
         setUser(currentValue => {

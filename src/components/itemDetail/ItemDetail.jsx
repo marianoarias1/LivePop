@@ -3,7 +3,7 @@ import "./itemDetailStyles.css"
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { useCartContext } from '../../hooks/useCartContext';
-import { outOfStock } from '../../Context/cartContext';
+import { outOfStock } from '../../Functions/popupFunctions';
 
 export const ItemDetail = ({product, onClose}) => {
     const {addToCart} = useCartContext();
